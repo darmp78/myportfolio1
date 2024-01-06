@@ -1,0 +1,249 @@
+/* Main styles */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#title {
+    background-color: #EDF4F3;
+}
+
+/* Navegation bar */
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.text-secundary-color {
+    color: #E75042;
+}
+
+.navbar {
+    padding: 0 0 15px;
+    background-color: #EDF4F3;
+}
+
+.nav-item {
+    padding: 0 5px;
+}
+
+.nav-link {
+    padding-bottom: 5px;
+}
+
+.navbar-brand {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0F4345;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    border-bottom: 2px solid #E75042 !important;
+}
+
+#navbarNav {
+    padding-left: 50px;
+}
+
+/* Title text*/
+
+.main-text-title {
+    padding-top: 5%;
+}
+
+.p-main-title {
+    padding: 16px 0;
+}
+
+/* Tittle IMG */
+.tittle-img {
+    width: 26%;
+    position: absolute;
+    right: 20%;
+    display: flex;
+}
+
+.small-circle-title-sec {
+    position: absolute;
+    right: 35%;
+}
+
+.tittle-img-about {
+    width: 26%;
+    position: absolute;
+    right: 58%;
+    margin-top: 2%;
+}
+
+/* Button title */
+
+.hire-title-button {
+    margin: 0% 3% 5% 0;
+    border-color: #E75042;
+    background-color: #E75042;
+    border-radius: 5px;
+}
+
+.hire-title-button:hover {
+    background-color: #E75042CC;
+    border-color: #E75042CC;
+}
+
+.know-title-button {
+    margin: 0% 3% 5% 0;
+    border-color: #E75042;
+    color: #E75042;
+    border-radius: 5px;
+}
+
+.know-title-button:hover {
+    border-color: #E75042CC;
+    color: #E75042CC;
+}
+
+/* My Skills */
+
+#mySkills {
+
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.container-fluid-myskills {
+    padding: 7%;
+}
+
+.h2-descrp-text {
+    font-size: 20px;
+}
+
+.skills-container-main-text {
+    padding: 7% 0 7% 7%;
+}
+
+.my-skills-card {
+    text-align: center;
+    margin: 5%;
+}
+
+.ico-skills {
+    color: #0F4345;
+}
+
+.card-margin-top {
+    margin-top: 60px;
+}
+
+/* My latest projects */
+
+#projects {
+
+    text-align: center;
+    background-color: #E75042;
+    color: #fff;
+
+}
+
+/* My Customers */
+
+#customer {
+    text-align: center;
+    background-color: #fff;
+    color: #0F4345;
+}
+
+/* My links */
+
+#links {
+    text-align: left;
+    background-color: #0F4345;
+    color: #fff;
+}
+
+.list-items-links {
+    padding: 0;
+    margin: 0;
+}
+
+.list-items-links-sub {
+    font-weight: 100;
+}
+
+.words-in-links {
+    padding: 3% 0 0 10%;
+}
+
+.hire-title-button-links {
+    margin: 3% 3% 5% 0;
+    border-color: #E75042;
+    background-color: #E75042;
+    border-radius: 5px;
+    width: 180px;
+    font-size: 30px;
+}
+
+.hire-title-button-links:hover {
+    background-color: #E75042CC;
+    border-color: #E75042CC;
+}
+
+.ico-angle-double-right {
+    margin-left: 6%;
+}
+
+/* footer */
+
+#footer {
+    padding: 3% 15%;
+    text-align: center;
+}
+
+.ico-footer {
+    margin: 5px;
+}
+
+.p-footer {
+    font-size: 0.7rem;
+    margin: 5px;
+}
+
+/* Media query breakpoints */
+
+@media (max-width:1000px) {
+    .tittle-img {
+        position: static;
+        width: 55%;
+
+    }
+
+    .main-title-img-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-text-title {
+        order: 2;
+    }
+
+    .main-img-title {
+        order: 1;
+        margin-left: 25%;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    .main-nav-menu {
+        text-align: right;
+
+    }
+
+    .nav-underline .nav-link {
+        padding-right: 10px;
+    }
+
+}
