@@ -20,7 +20,7 @@ body {
 
 .navbar {
     padding: 0 0 15px;
-    background-color: #EDF4F3;
+    background-color: transparent;
 }
 
 .nav-item {
@@ -60,13 +60,21 @@ body {
 .tittle-img {
     width: 26%;
     position: absolute;
-    right: 20%;
+    right: 17%;
     display: flex;
 }
 
 .small-circle-title-sec {
     position: absolute;
     right: 35%;
+}
+
+.main-circle-title-sec {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    height: 70%;
+    width: 50%;
 }
 
 .tittle-img-about {
@@ -213,9 +221,10 @@ body {
 
 @media (max-width:1000px) {
     .tittle-img {
-        position: static;
+        position: relative;
         width: 55%;
-
+        z-index: 1;
+        right: 5%;
     }
 
     .main-title-img-container {
@@ -231,6 +240,15 @@ body {
     .main-img-title {
         order: 1;
         margin-left: 25%;
+    }
+
+    .main-circle-title-sec {
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        height: 30%;
+        width: 70%;
+        z-index: 0;
     }
 
     #title {
