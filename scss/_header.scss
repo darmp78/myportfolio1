@@ -1,0 +1,87 @@
+/* Title section */
+#title {
+    background-color: #EDF4F3;
+
+    .container-fluid {
+        padding: 3% 15% 7%;
+    }
+
+    .main-circle-title-sec {
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        height: 70%;
+        width: 50%;
+    }
+
+    /* Navegation bar */
+    nav {
+        .navbar-brand {
+            font-size: 48px;
+            font-weight: bold;
+            color: $mainPrimaryColor;
+        }
+
+        .text-secundary-color {
+            color: $mainSecundaryColor;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            border-bottom: 2px solid $mainSecundaryColor !important;
+        }
+
+        #navbarNav {
+            padding-left: 50px;
+        }
+    }
+
+    /* Title text*/
+    .main-text-title {
+        padding-top: 5%;
+
+        .text-secundary-color {
+            color: $mainSecundaryColor;
+        }
+
+        .p-main-title {
+            padding: 16px 0;
+        }
+
+        .hire-title-button {
+            margin: map-get($map: $mainButtonSecundaryColor, $key: margin);
+            border-color: map-get($map: $mainButtonSecundaryColor, $key: border-color);
+            background-color: map-get($map: $mainButtonSecundaryColor, $key: background-color);
+            border-radius: map-get($map: $mainButtonSecundaryColor, $key: border-radius);
+            box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+
+            &:hover {
+                background-color: $mainSecundaryColorCC;
+                border-color: $mainSecundaryColorCC;
+            }
+        }
+
+        .know-title-button {
+            @extend .hire-title-button;
+            color: map-get($map: $secButtonSecundaryColor, $key: color);
+            background-color: white;
+
+            &:hover {
+                border-color: $mainSecundaryColorCC;
+                color: $mainSecundaryColorCC;
+                background-color: white;
+            }
+        }
+    }
+
+    /* Tittle IMG */
+    div {
+        .tittle-img {
+            width: 26%;
+            position: absolute;
+            right: 17%;
+            display: flex;
+
+        }
+    }
+}

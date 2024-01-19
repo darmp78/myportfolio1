@@ -1,0 +1,4 @@
+/* Mixins */
+@mixin aligment($type){
+    text-align: $type;
+}

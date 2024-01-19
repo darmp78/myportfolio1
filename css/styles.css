@@ -1,267 +1,234 @@
-/* Main styles */
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
+/* Import */
+/* Variables */
+/* Maps */
+/* Mixins */
+/* Title section */
 #title {
-    background-color: #EDF4F3;
+  background-color: #EDF4F3;
+  /* Navegation bar */
+  /* Title text*/
+  /* Tittle IMG */
 }
-
-/* Navegation bar */
-
-.container-fluid {
-    padding: 3% 15% 7%;
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
-
-.text-secundary-color {
-    color: #E75042;
+#title .main-circle-title-sec {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  height: 70%;
+  width: 50%;
 }
-
-.navbar {
-    padding: 0 0 15px;
-    background-color: transparent;
+#title nav .navbar-brand {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0F4345;
 }
-
-.nav-item {
-    padding: 0 5px;
+#title nav .text-secundary-color {
+  color: #E75042;
 }
-
-.nav-link {
-    padding-bottom: 5px;
+#title nav .navbar-nav .nav-link.active,
+#title nav .navbar-nav .nav-link.show {
+  border-bottom: 2px solid #E75042 !important;
 }
-
-.navbar-brand {
-    font-size: 48px;
-    font-weight: bold;
-    color: #0F4345;
+#title nav #navbarNav {
+  padding-left: 50px;
 }
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    border-bottom: 2px solid #E75042 !important;
+#title .main-text-title {
+  padding-top: 5%;
 }
-
-#navbarNav {
-    padding-left: 50px;
+#title .main-text-title .text-secundary-color {
+  color: #E75042;
 }
-
-/* Title text*/
-
-.main-text-title {
-    padding-top: 5%;
+#title .main-text-title .p-main-title {
+  padding: 16px 0;
 }
-
-.p-main-title {
-    padding: 16px 0;
+#title .main-text-title .hire-title-button, #title .main-text-title .know-title-button {
+  margin: 0% 3% 5% 0;
+  border-color: #E75042;
+  background-color: #E75042;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-/* Tittle IMG */
-.tittle-img {
-    width: 26%;
-    position: absolute;
-    right: 17%;
-    display: flex;
+#title .main-text-title .hire-title-button:hover, #title .main-text-title .know-title-button:hover {
+  background-color: rgba(231, 80, 66, 0.8);
+  border-color: rgba(231, 80, 66, 0.8);
 }
-
-.small-circle-title-sec {
-    position: absolute;
-    right: 35%;
+#title .main-text-title .know-title-button {
+  color: #E75042;
+  background-color: white;
 }
-
-.main-circle-title-sec {
-    position: absolute;
-    right: 1%;
-    top: 1%;
-    height: 70%;
-    width: 50%;
+#title .main-text-title .know-title-button:hover {
+  border-color: rgba(231, 80, 66, 0.8);
+  color: rgba(231, 80, 66, 0.8);
+  background-color: white;
 }
-
-.tittle-img-about {
-    width: 26%;
-    position: absolute;
-    right: 58%;
-    margin-top: 2%;
-}
-
-/* Button title */
-
-.hire-title-button {
-    margin: 0% 3% 5% 0;
-    border-color: #E75042;
-    background-color: #E75042;
-    border-radius: 5px;
-}
-
-.hire-title-button:hover {
-    background-color: #E75042CC;
-    border-color: #E75042CC;
-}
-
-.know-title-button {
-    margin: 0% 3% 5% 0;
-    border-color: #E75042;
-    color: #E75042;
-    border-radius: 5px;
-}
-
-.know-title-button:hover {
-    border-color: #E75042CC;
-    color: #E75042CC;
+#title div .tittle-img {
+  width: 26%;
+  position: absolute;
+  right: 17%;
+  display: flex;
 }
 
 /* My Skills */
-
 #mySkills {
-
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
-
-.container-fluid-myskills {
-    padding: 7%;
+#mySkills .container-fluid {
+  padding: 3% 15% 7%;
 }
-
-.h2-descrp-text {
-    font-size: 20px;
+#mySkills .container-fluid div div .my-skills-card {
+  text-align: center;
+  margin: 1%;
+  transition: all 1s;
 }
-
-.skills-container-main-text {
-    padding: 7% 0 7% 7%;
+#mySkills .container-fluid div div .my-skills-card:hover {
+  background-color: rgba(15, 67, 69, 0.8);
+  color: white;
 }
-
-.my-skills-card {
-    text-align: center;
-    margin: 5%;
+#mySkills .container-fluid div div .ico-skills {
+  color: #0F4345;
 }
-
-.ico-skills {
-    color: #0F4345;
+#mySkills .container-fluid div div .card-margin-top {
+  margin-top: 60px;
 }
-
-.card-margin-top {
-    margin-top: 60px;
+#mySkills .container-fluid div .skills-container-main-text {
+  padding: 7% 0 7% 7%;
+}
+#mySkills .container-fluid div .text-secundary-color {
+  color: #E75042;
+}
+#mySkills .container-fluid div .h2-descrp-text {
+  font-size: 20px;
+}
+#mySkills .container-fluid div .p-main-title {
+  padding: 16px 0;
+}
+#mySkills .container-fluid div .hire-title-button, #mySkills .container-fluid div #title .main-text-title .know-title-button, #title .main-text-title #mySkills .container-fluid div .know-title-button {
+  margin: 0% 3% 5% 0;
+  border-color: #E75042;
+  background-color: #E75042;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#mySkills .container-fluid div .hire-title-button:hover, #mySkills .container-fluid div #title .main-text-title .know-title-button:hover, #title .main-text-title #mySkills .container-fluid div .know-title-button:hover {
+  background-color: rgba(231, 80, 66, 0.8);
+  border-color: rgba(231, 80, 66, 0.8);
 }
 
 /* My latest projects */
-
 #projects {
-
-    text-align: center;
-    background-color: #E75042;
-    color: #fff;
-
+  text-align: center;
+  background-color: #E75042;
+  color: #fff;
+}
+#projects .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 /* My Customers */
-
 #customer {
-    text-align: center;
-    background-color: #fff;
-    color: #0F4345;
+  text-align: center;
+  background-color: #fff;
+  color: #0F4345;
+}
+#customer .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 /* My links */
-
 #links {
-    text-align: left;
-    background-color: #0F4345;
-    color: #fff;
+  text-align: left;
+  background-color: #0F4345;
+  color: #fff;
 }
-
-.list-items-links {
-    padding: 0;
-    margin: 0;
+#links .container-fluid {
+  padding: 3% 15% 7%;
 }
-
-.list-items-links-sub {
-    font-weight: 100;
+#links .container-fluid div div .list-items-links {
+  padding: 0;
+  margin: 0;
 }
-
-.words-in-links {
-    padding: 3% 0 0 10%;
+#links .container-fluid div div .list-items-links ul .list-items-links-sub {
+  font-weight: 100;
 }
-
-.hire-title-button-links {
-    margin: 3% 3% 5% 0;
-    border-color: #E75042;
-    background-color: #E75042;
-    border-radius: 5px;
-    width: 180px;
-    font-size: 30px;
+#links .container-fluid div .words-in-links {
+  padding: 3% 0 0 23%;
 }
-
-.hire-title-button-links:hover {
-    background-color: #E75042CC;
-    border-color: #E75042CC;
+#links .container-fluid div .words-in-links .text-secundary-color {
+  color: #E75042;
 }
-
-.ico-angle-double-right {
-    margin-left: 6%;
+#links .container-fluid div .words-in-links .hire-title-button-links {
+  margin: 3% 3% 5% 0;
+  border-color: #E75042;
+  background-color: #E75042;
+  border-radius: 5px;
+  width: 180px;
+  font-size: 30px;
+}
+#links .container-fluid div .words-in-links .hire-title-button-links:hover {
+  background-color: rgba(231, 80, 66, 0.8);
+  border-color: rgba(231, 80, 66, 0.8);
+}
+#links .container-fluid div .words-in-links .ico-angle-double-right {
+  margin-left: 6%;
 }
 
 /* footer */
-
 #footer {
-    padding: 3% 15%;
-    text-align: center;
+  padding: 3% 15%;
+  text-align: center;
+}
+#footer .ico-footer {
+  margin: 5px;
+}
+#footer .p-footer {
+  font-size: 0.7rem;
+  margin: 5px;
 }
 
-.ico-footer {
-    margin: 5px;
-}
-
-.p-footer {
-    font-size: 0.7rem;
-    margin: 5px;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Media query breakpoints */
-
-@media (max-width:1000px) {
-    .tittle-img {
-        position: relative;
-        width: 55%;
-        z-index: 1;
-        right: 5%;
-    }
-
-    .main-title-img-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .main-text-title {
-        order: 2;
-    }
-
-    .main-img-title {
-        order: 1;
-        margin-left: 25%;
-    }
-
-    .main-circle-title-sec {
-
-        right: 1%;
-        top: 1%;
-        height: 30%;
-        width: 70%;
-        z-index: 0;
-    }
-
-    #title {
-        text-align: center;
-    }
-
-    .main-nav-menu {
-        text-align: right;
-
-    }
-
-    .nav-underline .nav-link {
-        padding-right: 10px;
-    }
-
+@media (max-width: 1000px) {
+  #title {
+    text-align: center;
+  }
+  #title .main-nav-menu {
+    text-align: right;
+  }
+  #title .nav-underline .nav-link {
+    padding-right: 10px;
+  }
+  #title .main-title-img-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #title .main-title-img-container .main-img-title {
+    order: 1;
+    margin-left: 25%;
+  }
+  #title .main-title-img-container .tittle-img {
+    position: relative;
+    width: 55%;
+    z-index: 1;
+    right: 5%;
+  }
+  #title .main-text-title {
+    order: 2;
+  }
+  #title .main-circle-title-sec {
+    right: 1%;
+    top: 1%;
+    height: 30%;
+    width: 70%;
+    z-index: 0;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

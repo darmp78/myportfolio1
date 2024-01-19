@@ -1,0 +1,63 @@
+ /* Import */
+ @import "_variables";
+ @import "_maps";
+ @import "_mixins";
+ @import "_header";
+ @import "_index";
+ @import "_preFooter";
+ @import "_footer";
+
+ body {
+     font-family: $mainFontFamily;
+ }
+
+ /* Media query breakpoints */
+ @media (max-width:1000px) {
+     #title {
+         text-align: center;
+
+         .main-nav-menu {
+             text-align: right;
+
+         }
+
+         .nav-underline {
+             .nav-link {
+                 padding-right: 10px;
+             }
+
+         }
+
+
+         .main-title-img-container {
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+
+             .main-img-title {
+                 order: 1;
+                 margin-left: 25%;
+             }
+
+             .tittle-img {
+                 position: relative;
+                 width: 55%;
+                 z-index: 1;
+                 right: 5%;
+             }
+         }
+
+         .main-text-title {
+             order: 2;
+         }
+
+         .main-circle-title-sec {
+
+             right: 1%;
+             top: 1%;
+             height: 30%;
+             width: 70%;
+             z-index: 0;
+         }
+     }
+ }

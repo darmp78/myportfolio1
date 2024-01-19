@@ -1,0 +1,51 @@
+/* My links */
+#links {
+    text-align: left;
+    background-color: $mainPrimaryColor;
+    color: #fff;
+
+    .container-fluid {
+        padding: 3% 15% 7%;
+
+        div {
+            div {
+                .list-items-links {
+                    padding: 0;
+                    margin: 0;
+
+                    ul {
+                        .list-items-links-sub {
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+
+            .words-in-links {
+                padding: 3% 0 0 23%;
+
+                .text-secundary-color {
+                    color: $mainSecundaryColor;
+                }
+
+                .hire-title-button-links {
+                    margin: 3% 3% 5% 0;
+                    border-color: $mainSecundaryColor;
+                    background-color: $mainSecundaryColor;
+                    border-radius: 5px;
+                    width: 180px;
+                    font-size: 30px;
+
+                    &:hover {
+                        background-color: $mainSecundaryColorCC;
+                        border-color: $mainSecundaryColorCC;
+                    }
+                }
+
+                .ico-angle-double-right {
+                    margin-left: 6%;
+                }
+            }
+        }
+    }
+}
