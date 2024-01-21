@@ -53,11 +53,26 @@
 
          .main-circle-title-sec {
 
-             right: 1%;
-             top: 1%;
-             height: 30%;
-             width: 70%;
+             left: 32%;
+             bottom: 63%;
+             height: 48%;
+             width: 77%;
              z-index: 0;
+         }
+
+         .main-circle-title-sec-2 {
+             position: absolute;
+             right: 9%;
+             top: 38%;
+             height: 8%;
+         }
+
+         .main-circle-title-sec-3 {
+             position: absolute;
+             top: 19%;
+             right: 63%;             
+             height: 55%;
+             width: 35%;
          }
      }
  }

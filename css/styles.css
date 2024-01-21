@@ -14,13 +14,28 @@
 }
 #title .main-circle-title-sec {
   position: absolute;
-  right: 1%;
-  top: 1%;
-  height: 70%;
-  width: 50%;
+  bottom: 41%;
+  left: 56%;
+  height: 85%;
+  width: 47%;
+  opacity: 0.8;
+}
+#title .main-circle-title-sec-2 {
+  position: absolute;
+  right: 9%;
+  top: 66%;
+  opacity: 0.8;
+}
+#title .main-circle-title-sec-3 {
+  position: absolute;
+  right: 37%;
+  top: 57%;
+  height: 36%;
+  width: 19%;
+  opacity: 0.8;
 }
 #title nav .navbar-brand {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: bold;
   color: #0F4345;
 }
@@ -40,8 +55,12 @@
 #title .main-text-title .text-secundary-color {
   color: #E75042;
 }
+#title .main-text-title .h2-text-primary-color {
+  font-size: 27px;
+}
 #title .main-text-title .p-main-title {
   padding: 16px 0;
+  line-height: 26px;
 }
 #title .main-text-title .hire-title-button, #title .main-text-title .know-title-button {
   margin: 0% 3% 5% 0;
@@ -77,12 +96,14 @@
   z-index: 1;
 }
 #mySkills .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 3% 15% 3%;
 }
 #mySkills .container-fluid div div .my-skills-card {
   text-align: center;
   margin: 1%;
   transition: all 1s;
+  color: #0F4345;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #mySkills .container-fluid div div .my-skills-card:hover {
   background-color: rgba(15, 67, 69, 0.8);
@@ -92,7 +113,11 @@
   color: #0F4345;
 }
 #mySkills .container-fluid div div .card-margin-top {
-  margin-top: 60px;
+  margin: 40px 0;
+}
+#mySkills .container-fluid div div .card-footer-max-text {
+  font-size: 20px;
+  font-weight: 900;
 }
 #mySkills .container-fluid div .skills-container-main-text {
   padding: 7% 0 7% 7%;
@@ -105,6 +130,7 @@
 }
 #mySkills .container-fluid div .p-main-title {
   padding: 16px 0;
+  line-height: 26px;
 }
 #mySkills .container-fluid div .hire-title-button, #mySkills .container-fluid div #title .main-text-title .know-title-button, #title .main-text-title #mySkills .container-fluid div .know-title-button {
   margin: 0% 3% 5% 0;
@@ -125,7 +151,7 @@
   color: #fff;
 }
 #projects .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 3% 15% 3%;
 }
 
 /* My Customers */
@@ -223,11 +249,24 @@ body {
     order: 2;
   }
   #title .main-circle-title-sec {
-    right: 1%;
-    top: 1%;
-    height: 30%;
-    width: 70%;
+    left: 32%;
+    bottom: 63%;
+    height: 48%;
+    width: 77%;
     z-index: 0;
+  }
+  #title .main-circle-title-sec-2 {
+    position: absolute;
+    right: 9%;
+    top: 38%;
+    height: 8%;
+  }
+  #title .main-circle-title-sec-3 {
+    position: absolute;
+    top: 19%;
+    right: 63%;
+    height: 55%;
+    width: 35%;
   }
 }
 

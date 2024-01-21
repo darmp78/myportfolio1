@@ -8,16 +8,31 @@
 
     .main-circle-title-sec {
         position: absolute;
-        right: 1%;
-        top: 1%;
-        height: 70%;
-        width: 50%;
+        bottom: 41%;
+        left: 56%;
+        height: 85%;
+        width: 47%;
+        opacity: 0.8;
+    }
+    .main-circle-title-sec-2 {
+        position: absolute;
+        right: 9%;
+        top: 66%;
+        opacity: 0.8;
+    }
+    .main-circle-title-sec-3 {
+        position: absolute;
+        right: 37%;
+        top: 57%;
+        height: 36%;
+        width: 19%;
+        opacity: 0.8;
     }
 
     /* Navegation bar */
     nav {
         .navbar-brand {
-            font-size: 48px;
+            font-size: 50px;
             font-weight: bold;
             color: $mainPrimaryColor;
         }
@@ -25,7 +40,6 @@
         .text-secundary-color {
             color: $mainSecundaryColor;
         }
-
         .navbar-nav .nav-link.active,
         .navbar-nav .nav-link.show {
             border-bottom: 2px solid $mainSecundaryColor !important;
@@ -43,9 +57,13 @@
         .text-secundary-color {
             color: $mainSecundaryColor;
         }
+        .h2-text-primary-color{
+            font-size: 27px;
+        }
 
         .p-main-title {
             padding: 16px 0;
+            line-height: 26px;
         }
 
         .hire-title-button {
@@ -83,5 +101,6 @@
             display: flex;
 
         }
+        
     }
 }

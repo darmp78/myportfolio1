@@ -6,7 +6,7 @@
     z-index: 1;
 
     .container-fluid {
-        padding: 3% 15% 7%;
+        padding: 3% 15% 3%;
 
         div {
             div {
@@ -14,7 +14,8 @@
                     text-align: center;
                     margin: 1%;
                     transition: all 1s;
-
+                    color: $mainPrimaryColor;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                     &:hover {
                         background-color: $mainPrimaryColorCC;
                         color: white;
@@ -26,7 +27,11 @@
                 }
 
                 .card-margin-top {
-                    margin-top: 60px;
+                    margin: 40px 0;
+                }
+                .card-footer-max-text{
+                    font-size: 20px;
+                    font-weight: 900;
                 }
             }
 
@@ -44,6 +49,7 @@
 
             .p-main-title {
                 padding: 16px 0;
+                line-height: 26px;
             }
 
             .hire-title-button {
@@ -71,7 +77,7 @@
     color: #fff;
 
     .container-fluid {
-        padding: 3% 15% 7%;
+        padding: 3% 15% 3%;
     }
 }
 
