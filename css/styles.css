@@ -1,3 +1,5 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 /* Import */
 /* Variables */
 /* Maps */
@@ -12,27 +14,37 @@
 #title .container-fluid {
   padding: 3% 15% 7%;
 }
-#title .main-circle-title-sec {
+#title .main-circle-title-proper, #title .main-circle-title-sec-5, #title .main-circle-title-sec-4, #title .main-circle-title-sec-3, #title .main-circle-title-sec-2, #title .main-circle-title-sec {
   position: absolute;
+  opacity: 0.6;
+}
+#title .main-circle-title-sec {
   bottom: 41%;
   left: 56%;
   height: 85%;
   width: 47%;
-  opacity: 0.8;
 }
 #title .main-circle-title-sec-2 {
-  position: absolute;
-  right: 9%;
-  top: 66%;
-  opacity: 0.8;
+  right: 1%;
+  top: 52%;
 }
 #title .main-circle-title-sec-3 {
-  position: absolute;
-  right: 37%;
-  top: 57%;
+  right: 35%;
+  top: 60%;
   height: 36%;
   width: 19%;
-  opacity: 0.8;
+}
+#title .main-circle-title-sec-4 {
+  right: 0%;
+  top: 55%;
+  height: 30%;
+  width: 27%;
+}
+#title .main-circle-title-sec-5 {
+  right: 1%;
+  top: 66%;
+  height: 5%;
+  width: 5%;
 }
 #title nav .navbar-brand {
   font-size: 50px;
@@ -58,7 +70,7 @@
 #title .main-text-title .h2-text-primary-color {
   font-size: 27px;
 }
-#title .main-text-title .p-main-title {
+#title .main-text-title .p-main-title, #title .main-text-title #mySkills .container-fluid div .p-main-title-p, #mySkills .container-fluid div #title .main-text-title .p-main-title-p {
   padding: 16px 0;
   line-height: 26px;
 }
@@ -121,6 +133,9 @@
 }
 #mySkills .container-fluid div .skills-container-main-text {
   padding: 7% 0 7% 7%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
 }
 #mySkills .container-fluid div .text-secundary-color {
   color: #E75042;
@@ -128,20 +143,29 @@
 #mySkills .container-fluid div .h2-descrp-text {
   font-size: 20px;
 }
-#mySkills .container-fluid div .p-main-title {
-  padding: 16px 0;
+#mySkills .container-fluid div .p-main-title, #mySkills .container-fluid div .p-main-title-p {
+  padding: 10px 0 0;
   line-height: 26px;
 }
 #mySkills .container-fluid div .hire-title-button, #mySkills .container-fluid div #title .main-text-title .know-title-button, #title .main-text-title #mySkills .container-fluid div .know-title-button {
-  margin: 0% 3% 5% 0;
+  margin: 5% 3% 5% 0;
   border-color: #E75042;
   background-color: #E75042;
   border-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 150px;
 }
 #mySkills .container-fluid div .hire-title-button:hover, #mySkills .container-fluid div #title .main-text-title .know-title-button:hover, #title .main-text-title #mySkills .container-fluid div .know-title-button:hover {
   background-color: rgba(231, 80, 66, 0.8);
   border-color: rgba(231, 80, 66, 0.8);
+}
+#mySkills .container-fluid div .p-main-title-p {
+  margin: 12% 0 0;
+}
+#mySkills .container-fluid div .p-main-title-p .p-main-title-name {
+  font-family: "Alex Brush", cursive;
+  font-size: 35px;
+  padding: 10px 0 0;
 }
 
 /* My latest projects */
@@ -267,6 +291,26 @@ body {
     right: 63%;
     height: 55%;
     width: 35%;
+  }
+  #title .main-circle-title-sec-4 {
+    right: 1%;
+  }
+  #title .main-circle-title-sec-5 {
+    right: 25%;
+    top: 61%;
+    height: 10%;
+    width: 6%;
+  }
+  #mySkills .container-fluid .container-fluid-skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #mySkills .container-fluid .container-fluid-skills .skills-container-main-cards {
+    order: 2;
+  }
+  #mySkills .container-fluid .container-fluid-skills .skills-container-main-text {
+    order: 1;
   }
 }
 

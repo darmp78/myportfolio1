@@ -16,6 +16,7 @@
                     transition: all 1s;
                     color: $mainPrimaryColor;
                     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
                     &:hover {
                         background-color: $mainPrimaryColorCC;
                         color: white;
@@ -29,7 +30,8 @@
                 .card-margin-top {
                     margin: 40px 0;
                 }
-                .card-footer-max-text{
+
+                .card-footer-max-text {
                     font-size: 20px;
                     font-weight: 900;
                 }
@@ -37,6 +39,9 @@
 
             .skills-container-main-text {
                 padding: 7% 0 7% 7%;
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
             }
 
             .text-secundary-color {
@@ -48,22 +53,36 @@
             }
 
             .p-main-title {
-                padding: 16px 0;
+                padding: 10px 0 0;
                 line-height: 26px;
             }
 
             .hire-title-button {
-                margin: map-get($map: $mainButtonSecundaryColor, $key: margin);
+                margin: 5% 3% 5% 0;
                 border-color: map-get($map: $mainButtonSecundaryColor, $key: border-color);
                 background-color: map-get($map: $mainButtonSecundaryColor, $key: background-color);
                 border-radius: map-get($map: $mainButtonSecundaryColor, $key: border-radius);
                 box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+                width: 150px;
 
                 &:hover {
                     background-color: $mainSecundaryColorCC;
                     border-color: $mainSecundaryColorCC;
                 }
             }
+
+            .p-main-title-p {
+                @extend .p-main-title;
+                margin: 12% 0 0;
+
+                .p-main-title-name {
+                    font-family: $signatureFontFamily;
+                    font-size: 35px;
+                    padding: 10px 0 0;
+                }
+
+            }
+
         }
 
     }

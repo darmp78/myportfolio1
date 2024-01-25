@@ -1,3 +1,7 @@
+ /* Fonts */
+
+ @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
  /* Import */
  @import "_variables";
  @import "_maps";
@@ -70,9 +74,38 @@
          .main-circle-title-sec-3 {
              position: absolute;
              top: 19%;
-             right: 63%;             
+             right: 63%;
              height: 55%;
              width: 35%;
+         }
+
+         .main-circle-title-sec-4 {
+             right: 1%;
+         }
+
+         .main-circle-title-sec-5 {
+             right: 25%;
+             top: 61%;
+             height: 10%;
+             width: 6%;
+         }
+     }
+
+     #mySkills {
+         .container-fluid {
+             .container-fluid-skills {
+                 display: flex;
+                 justify-content: center;
+                 flex-direction: column;
+
+                 .skills-container-main-cards {
+                     order: 2;
+                 }
+
+                 .skills-container-main-text {
+                     order: 1;
+                 }
+             }
          }
      }
  }

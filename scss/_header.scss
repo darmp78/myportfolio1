@@ -5,28 +5,44 @@
     .container-fluid {
         padding: 3% 15% 7%;
     }
-
-    .main-circle-title-sec {
+    .main-circle-title-proper{
         position: absolute;
+        opacity: 0.6;
+    }
+    .main-circle-title-sec {
+        @extend .main-circle-title-proper;
         bottom: 41%;
         left: 56%;
         height: 85%;
         width: 47%;
-        opacity: 0.8;
+        
     }
     .main-circle-title-sec-2 {
-        position: absolute;
-        right: 9%;
-        top: 66%;
-        opacity: 0.8;
+        @extend .main-circle-title-proper;
+        right: 1%;
+        top: 52%;
+        
     }
     .main-circle-title-sec-3 {
-        position: absolute;
-        right: 37%;
-        top: 57%;
+        @extend .main-circle-title-proper;
+        right: 35%;
+        top: 60%;
         height: 36%;
         width: 19%;
-        opacity: 0.8;
+    }
+    .main-circle-title-sec-4 {
+        @extend .main-circle-title-proper;
+        right: 0%;
+        top: 55%;
+        height: 30%;
+        width: 27%;
+    }
+    .main-circle-title-sec-5 {
+        @extend .main-circle-title-proper;
+        right: 1%;
+        top: 66%;
+        height: 5%;
+        width: 5%;
     }
 
     /* Navegation bar */
