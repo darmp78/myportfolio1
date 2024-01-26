@@ -97,6 +97,42 @@
 
     .container-fluid {
         padding: 3% 15% 3%;
+
+        div {
+            .h2-main-title{
+                margin-bottom: 20px;
+            }
+            div {
+                .projects-main-card {
+                    padding: 7%;
+                    box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+                    background-color: rgba(255, 255, 255, 0.93);
+
+                    .h6-card-text {
+                        padding-bottom: 5%;
+                        font-size: 14px;
+                    }
+
+                    .p-card-text {
+                        padding: 5% 0%;
+                    }
+
+                    .btn-skills-set {
+                        background: #FFFFFF;
+                        border: 1px solid #D4D3D3;
+                        border-radius: 25px;
+                        font-size: 12px;
+                        padding: 0.5% 5%;
+
+                        &:hover {
+                            background:  $mainPrimaryColor;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -108,5 +144,8 @@
 
     .container-fluid {
         padding: 3% 15% 7%;
+        .h2-main-title{
+            margin-bottom: 20px;
+        }
     }
 }

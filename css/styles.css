@@ -20,7 +20,7 @@
 }
 #title .main-circle-title-sec {
   bottom: 41%;
-  left: 56%;
+  left: 53%;
   height: 85%;
   width: 47%;
 }
@@ -177,6 +177,32 @@
 #projects .container-fluid {
   padding: 3% 15% 3%;
 }
+#projects .container-fluid div .h2-main-title {
+  margin-bottom: 20px;
+}
+#projects .container-fluid div div .projects-main-card {
+  padding: 7%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: rgba(255, 255, 255, 0.93);
+}
+#projects .container-fluid div div .projects-main-card .h6-card-text {
+  padding-bottom: 5%;
+  font-size: 14px;
+}
+#projects .container-fluid div div .projects-main-card .p-card-text {
+  padding: 5% 0%;
+}
+#projects .container-fluid div div .projects-main-card .btn-skills-set {
+  background: #FFFFFF;
+  border: 1px solid #D4D3D3;
+  border-radius: 25px;
+  font-size: 12px;
+  padding: 0.5% 5%;
+}
+#projects .container-fluid div div .projects-main-card .btn-skills-set:hover {
+  background: #0F4345;
+  color: #FFFFFF;
+}
 
 /* My Customers */
 #customer {
@@ -186,6 +212,9 @@
 }
 #customer .container-fluid {
   padding: 3% 15% 7%;
+}
+#customer .container-fluid .h2-main-title {
+  margin-bottom: 20px;
 }
 
 /* My links */
@@ -261,20 +290,19 @@ body {
   }
   #title .main-title-img-container .main-img-title {
     order: 1;
-    margin-left: 25%;
   }
   #title .main-title-img-container .tittle-img {
     position: relative;
     width: 55%;
     z-index: 1;
-    right: 5%;
+    left: 22%;
   }
   #title .main-text-title {
     order: 2;
   }
   #title .main-circle-title-sec {
-    left: 32%;
-    bottom: 63%;
+    left: 23%;
+    bottom: 64%;
     height: 48%;
     width: 77%;
     z-index: 0;
