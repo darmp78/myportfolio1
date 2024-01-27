@@ -147,5 +147,14 @@
         .h2-main-title{
             margin-bottom: 20px;
         }
+        div{
+            div{
+                .card-img-top-customer{
+                    filter: grayscale(100%);
+                    width: 90%;
+                    margin: 5%;
+                }
+            }
+        }
     }
 }
