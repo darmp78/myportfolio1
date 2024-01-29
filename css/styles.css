@@ -111,6 +111,11 @@
   padding: 3% 15% 3%;
 }
 #mySkills .container-fluid div div .my-skills-card {
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
   text-align: center;
   margin: 1%;
   transition: all 1s;
@@ -139,6 +144,7 @@
 }
 #mySkills .container-fluid div .text-secundary-color {
   color: #E75042;
+  font-size: 2rem;
 }
 #mySkills .container-fluid div .h2-descrp-text {
   font-size: 20px;
@@ -181,6 +187,11 @@
   margin-bottom: 20px;
 }
 #projects .container-fluid div div .projects-main-card {
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
   padding: 7%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: rgba(255, 255, 255, 0.93);
@@ -217,11 +228,111 @@
   margin-bottom: 20px;
 }
 #customer .container-fluid div div .card-img-top-customer {
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
   filter: grayscale(100%);
   width: 90%;
   margin: 5%;
 }
 
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+#title .container-fluid-about {
+  padding: 3% 15% 3%;
+}
+#title .container-fluid-about .main-title-img-container {
+  padding: 5% 0 0;
+}
+#title .container-fluid-about .main-title-img-container .main-img-title-about {
+  text-align: center;
+}
+#title .container-fluid-about .main-title-img-container .main-img-title-about .tittle-img-about {
+  width: 75%;
+}
+#title .container-fluid-about .main-title-img-container .main-text-title-about {
+  text-align: start;
+  padding-top: 5%;
+}
+#title .container-fluid-about .main-title-img-container .main-text-title-about .text-secundary-color {
+  color: #E75042;
+}
+#title .container-fluid-about .main-title-img-container .main-text-title-about .h2-text-primary-color {
+  font-size: 27px;
+}
+#title .container-fluid-about .main-title-img-container .main-text-title-about .p-main-title, #title .container-fluid-about .main-title-img-container .main-text-title-about #mySkills .container-fluid div .p-main-title-p, #mySkills .container-fluid div #title .container-fluid-about .main-title-img-container .main-text-title-about .p-main-title-p {
+  padding: 16px 0;
+  line-height: 26px;
+}
+
+#mySkills .container-fluid-about {
+  padding: 3% 15% 3%;
+}
+#mySkills .container-fluid-about div .h2-main-title {
+  text-align: center;
+  color: #E75042;
+  padding-bottom: 3%;
+}
+#mySkills .container-fluid-about div div .card-myskills-about-main {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #0F4345;
+  border-color: #0F4345;
+  color: white;
+}
+#mySkills .container-fluid-about div div .card-myskills-about-main div .card-title-bigtext {
+  font-size: 47px;
+  font-weight: 800;
+  padding: 10% 20% 0%;
+}
+#mySkills .container-fluid-about div div .card-myskills-about-main div .card-p-bigtext {
+  font-size: 23px;
+  padding: 0% 20% 6%;
+}
+#mySkills .container-fluid-about div div .card-myskills-about {
+  color: #0F4345;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+#myExperinceSkills .container-fluid-about {
+  padding: 3% 15% 3%;
+}
+#myExperinceSkills .container-fluid-about div div .h2-main-title {
+  color: #E75042;
+  padding-bottom: 5%;
+}
+#myExperinceSkills .container-fluid-about div div div .working-experience-svg {
+  position: relative;
+  left: 87%;
+  bottom: 21%;
+}
+#myExperinceSkills .container-fluid-about div div div .working-experience-p-text {
+  width: 65%;
+}
+
+/* Animations */
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+/* Media query breakpoints */
+@media (max-width: 1000px) {
+  #title .container-fluid-about .main-title-img-container .main-img-title-about .tittle-img-about {
+    width: 100%;
+  }
+}
 /* My links */
 #links {
   text-align: left;

@@ -11,6 +11,13 @@
         div {
             div {
                 .my-skills-card {
+
+                    scale: 0.7;
+                    opacity: 0;
+                    animation: fade-in linear forwards;
+                    animation-timeline: view();
+                    animation-range: entry;
+
                     text-align: center;
                     margin: 1%;
                     transition: all 1s;
@@ -46,6 +53,7 @@
 
             .text-secundary-color {
                 color: $mainSecundaryColor;
+                font-size: 2rem;
             }
 
             .h2-descrp-text {
@@ -104,6 +112,13 @@
             }
             div {
                 .projects-main-card {
+
+                    scale: 0.7;
+                    opacity: 0;
+                    animation: fade-in linear forwards;
+                    animation-timeline: view();
+                    animation-range: entry;
+
                     padding: 7%;
                     box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
                     background-color: rgba(255, 255, 255, 0.93);
@@ -150,6 +165,13 @@
         div{
             div{
                 .card-img-top-customer{
+
+                    scale: 0.7;
+                    opacity: 0;
+                    animation: fade-in linear forwards;
+                    animation-timeline: view();
+                    animation-range: entry;
+
                     filter: grayscale(100%);
                     width: 90%;
                     margin: 5%;
@@ -157,4 +179,8 @@
             }
         }
     }
+}
+
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;};
 }

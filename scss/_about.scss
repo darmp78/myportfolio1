@@ -1,0 +1,137 @@
+#title {
+    .container-fluid-about {
+        padding: 3% 15% 3%;
+
+        .main-title-img-container {
+            padding: 5% 0 0;
+
+            .main-img-title-about {
+
+                text-align: center;
+
+                .tittle-img-about {
+                    width: 75%;
+                }
+            }
+
+            .main-text-title-about {
+                text-align: start;
+                padding-top: 5%;
+
+                .text-secundary-color {
+                    color: $mainSecundaryColor;
+                }
+
+                .h2-text-primary-color {
+                    font-size: 27px;
+                }
+
+                .p-main-title {
+                    padding: 16px 0;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+#mySkills {
+    .container-fluid-about {
+        padding: 3% 15% 3%;
+
+        div {
+            .h2-main-title {
+                text-align: center;
+                color: $mainSecundaryColor;
+                padding-bottom: 3%;
+            }
+
+            div {
+                .card-myskills-about-main {
+                    box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+                    background-color: $mainPrimaryColor;
+                    border-color: $mainPrimaryColor;
+                    color: white;
+
+                    div {
+                        .card-title-bigtext {
+                            font-size: 47px;
+                            font-weight: 800;
+                            padding: 10% 20% 0%;
+                        }
+
+                        .card-p-bigtext {
+                            font-size: 23px;
+                            padding: 0% 20% 6%;
+                        }
+                    }
+                }
+
+                .card-myskills-about {
+                    color: $mainPrimaryColor;
+                    box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+
+                    scale: 0.7;
+                    opacity: 0;
+                    animation: fade-in linear forwards;
+                    animation-timeline: view();
+                    animation-range: entry;
+                }
+            }
+        }
+    }
+
+}
+
+#myExperinceSkills {
+    .container-fluid-about {
+        padding: 3% 15% 3%;
+
+        div {
+            div {
+                .h2-main-title {
+                    color: $mainSecundaryColor;
+                    padding-bottom: 5%;
+                }
+
+                div {
+                    .working-experience-svg {
+                        position: relative;
+                        left: 87%;
+                        bottom: 21%;
+                    }
+
+                    .working-experience-p-text {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Animations */
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+
+    ;
+}
+
+/* Media query breakpoints */
+@media (max-width:1000px) {
+    #title {
+        .container-fluid-about {
+            .main-title-img-container {
+                .main-img-title-about {
+                    .tittle-img-about {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
