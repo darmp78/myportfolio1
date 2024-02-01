@@ -136,7 +136,7 @@
   font-size: 20px;
   font-weight: 900;
 }
-#mySkills .container-fluid div .skills-container-main-text {
+#mySkills .container-fluid div .skills-container-main-text, #mySkills #myWorkingExperience .container-fluid div .row-container-workingExp .skills-container-main-text1, #myWorkingExperience #mySkills .container-fluid div .row-container-workingExp .skills-container-main-text1, #mySkills #myWorkingExperience .container-fluid .row-container-workingExp div .skills-container-main-text1, #myWorkingExperience #mySkills .container-fluid .row-container-workingExp div .skills-container-main-text1 {
   padding: 7% 0 7% 7%;
   display: flex;
   justify-content: left;
@@ -186,7 +186,10 @@
 #projects .container-fluid div .h2-main-title {
   margin-bottom: 20px;
 }
-#projects .container-fluid div div .projects-main-card {
+#projects .container-fluid div .ele-feature-projects {
+  padding: 0.6%;
+}
+#projects .container-fluid div .ele-feature-projects .projects-main-card {
   scale: 0.7;
   opacity: 0;
   animation: fade-in linear forwards;
@@ -194,23 +197,26 @@
   animation-range: entry;
   padding: 7%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: #F9F9F9;
 }
-#projects .container-fluid div div .projects-main-card .h6-card-text {
+#projects .container-fluid div .ele-feature-projects .projects-main-card .h6-card-text {
   padding-bottom: 5%;
   font-size: 14px;
 }
-#projects .container-fluid div div .projects-main-card .p-card-text {
+#projects .container-fluid div .ele-feature-projects .projects-main-card .p-card-text {
   padding: 5% 0%;
 }
-#projects .container-fluid div div .projects-main-card .btn-skills-set {
+#projects .container-fluid div .ele-feature-projects .projects-main-card .card-img-top-projects {
+  border-radius: 6px;
+}
+#projects .container-fluid div .ele-feature-projects .projects-main-card .btn-skills-set {
   background: #FFFFFF;
   border: 1px solid #D4D3D3;
   border-radius: 25px;
   font-size: 12px;
   padding: 0.5% 5%;
 }
-#projects .container-fluid div div .projects-main-card .btn-skills-set:hover {
+#projects .container-fluid div .ele-feature-projects .projects-main-card .btn-skills-set:hover {
   background: #0F4345;
   color: #FFFFFF;
 }
@@ -311,12 +317,50 @@
   color: #E75042;
   padding-bottom: 5%;
 }
+#myExperinceSkills .container-fluid-about div div div .working-experience-year-text, #myExperinceSkills .container-fluid-about div div div .working-experience-title-text {
+  padding-top: 5px;
+  font-weight: 700;
+}
+#myExperinceSkills .container-fluid-about div div div .working-experience-title-text {
+  padding-top: 0%;
+}
 #myExperinceSkills .container-fluid-about div div div .working-experience-svg {
   position: relative;
-  left: 87%;
-  bottom: 21%;
+  left: 101%;
+  bottom: 18%;
 }
 #myExperinceSkills .container-fluid-about div div div .working-experience-p-text {
+  width: 65%;
+  border-left: solid #0F4345 1px;
+  padding: 5px 5px 5px 20px;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills {
+  margin-bottom: 5%;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills {
+  margin-bottom: 5%;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in, #myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in4, #myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in3, #myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in2, #myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in1 {
+  background-color: #E75042;
+  height: 24px;
+  width: 70%;
+  border-radius: 20px;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in1 {
+  width: 40%;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in2 {
+  width: 100%;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in3 {
+  width: 75%;
+}
+#myExperinceSkills .container-fluid-about div .div-technical-skills .div-progress-bar-skills .progress-bar-skills .progress-bar-skills-in4 {
   width: 65%;
 }
 
@@ -333,6 +377,111 @@
     width: 100%;
   }
 }
+#myWorkingExperience .container-fluid {
+  padding: 3% 15% 3%;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp {
+  margin-bottom: 3%;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .img-working-experience {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .img-working-experience {
+  width: 95%;
+  border-radius: 6px;
+  margin-bottom: 10%;
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .skills-container-main-text, #myWorkingExperience .container-fluid .row-container-workingExp .skills-container-main-text1 {
+  padding: 0% 0 4% 12px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .skills-container-main-text1 {
+  padding: 0% 4% 4% 12px;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .text-secundary-color {
+  color: #E75042;
+  font-size: 2rem;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .h2-descrp-text {
+  font-size: 20px;
+}
+#myWorkingExperience .container-fluid .row-container-workingExp .p-main-title, #myWorkingExperience #mySkills .container-fluid .row-container-workingExp div .p-main-title-p, #mySkills #myWorkingExperience .container-fluid .row-container-workingExp div .p-main-title-p, #myWorkingExperience #mySkills .container-fluid div .row-container-workingExp .p-main-title-p, #mySkills #myWorkingExperience .container-fluid div .row-container-workingExp .p-main-title-p {
+  padding: 10px 0 0;
+  line-height: 26px;
+}
+
+/* Animations */
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+/* Media query breakpoints */
+@media (max-width: 1000px) {
+  #myWorkingExperience .container-fluid .row-container-workingExp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #myWorkingExperience .container-fluid .row-container-workingExp .img-working-experience {
+    order: 1;
+  }
+  #myWorkingExperience .container-fluid .row-container-workingExp .skills-container-main-text1 {
+    order: 2;
+  }
+}
+#mySevices .container-fluid-services {
+  padding: 3% 15% 3%;
+}
+#mySevices .container-fluid-services div .h2-main-title {
+  text-align: center;
+  color: #E75042;
+  padding-bottom: 3%;
+}
+#mySevices .container-fluid-services div div .card-myskills-about-main {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #0F4345;
+  border-color: #0F4345;
+  color: white;
+}
+#mySevices .container-fluid-services div div .card-myskills-about-main div .card-title-bigtext {
+  font-size: 47px;
+  font-weight: 800;
+  padding: 10% 20% 0%;
+}
+#mySevices .container-fluid-services div div .card-myskills-about-main div .card-p-bigtext {
+  font-size: 23px;
+  padding: 0% 20% 6%;
+}
+#mySevices .container-fluid-services div div .card-myskills-about {
+  color: #0F4345;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+#industries .container-fluid-industries {
+  padding: 3% 15% 3%;
+}
+#industries .container-fluid-industries div .h2-main-title {
+  text-align: center;
+  color: #E75042;
+  padding-bottom: 3%;
+}
+
 /* My links */
 #links {
   text-align: left;
@@ -409,9 +558,9 @@ body {
   }
   #title .main-title-img-container .tittle-img {
     position: relative;
-    width: 55%;
+    width: 86%;
     z-index: 1;
-    left: 22%;
+    left: 5%;
   }
   #title .main-text-title {
     order: 2;
@@ -453,7 +602,7 @@ body {
   #mySkills .container-fluid .container-fluid-skills .skills-container-main-cards {
     order: 2;
   }
-  #mySkills .container-fluid .container-fluid-skills .skills-container-main-text {
+  #mySkills .container-fluid .container-fluid-skills .skills-container-main-text, #mySkills #myWorkingExperience .container-fluid .container-fluid-skills .row-container-workingExp .skills-container-main-text1, #myWorkingExperience #mySkills .container-fluid .container-fluid-skills .row-container-workingExp .skills-container-main-text1, #mySkills #myWorkingExperience .container-fluid .row-container-workingExp .container-fluid-skills .skills-container-main-text1, #myWorkingExperience #mySkills .container-fluid .row-container-workingExp .container-fluid-skills .skills-container-main-text1 {
     order: 1;
   }
 }

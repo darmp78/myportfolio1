@@ -9,6 +9,8 @@
  @import "_header";
  @import "_index";
  @import "_about";
+ @import "_work";
+ @import "_services";
  @import "_preFooter";
  @import "_footer";
 
@@ -46,9 +48,9 @@
 
              .tittle-img {
                  position: relative;
-                 width: 55%;
+                 width: 86%;
                  z-index: 1;
-                 left: 22%;
+                 left: 5%;
              }
          }
 

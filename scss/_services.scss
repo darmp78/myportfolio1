@@ -1,0 +1,62 @@
+#mySevices {
+    .container-fluid-services {
+        padding: 3% 15% 3%;
+
+        div {
+            .h2-main-title {
+                text-align: center;
+                color: $mainSecundaryColor;
+                padding-bottom: 3%;
+            }
+
+            div {
+                .card-myskills-about-main {
+                    box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+                    background-color: $mainPrimaryColor;
+                    border-color: $mainPrimaryColor;
+                    color: white;
+
+                    div {
+                        .card-title-bigtext {
+                            font-size: 47px;
+                            font-weight: 800;
+                            padding: 10% 20% 0%;
+                        }
+
+                        .card-p-bigtext {
+                            font-size: 23px;
+                            padding: 0% 20% 6%;
+                        }
+                    }
+                }
+
+                .card-myskills-about {
+                    color: $mainPrimaryColor;
+                    box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+
+                    scale: 0.7;
+                    opacity: 0;
+                    animation: fade-in linear forwards;
+                    animation-timeline: view();
+                    animation-range: entry;
+                }
+            }
+        }
+    }
+
+}
+
+#industries{
+    .container-fluid-industries{
+        padding: 3% 15% 3%;
+        div{
+            .h2-main-title {
+                text-align: center;
+                color: $mainSecundaryColor;
+                padding-bottom: 3%;
+            }
+
+        }
+
+    }
+}
