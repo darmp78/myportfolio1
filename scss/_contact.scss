@@ -1,0 +1,89 @@
+#contactForm {
+    .container-fluid-contactForm {
+        padding: 3% 15% 3%;
+        
+        .main-container-form-all {
+            background-image: url("../images/contacUs.png");
+            .main-container-form {
+                width: 60%;
+                padding-right: 3%;
+                background-color: white;
+                .contactUs-form {
+                    .send-button-contactUS {
+                        margin: 5% 3% 5% 0;
+                        border-color: map-get($map: $mainButtonSecundaryColor, $key: border-color);
+                        background-color: map-get($map: $mainButtonSecundaryColor, $key: background-color);
+                        border-radius: map-get($map: $mainButtonSecundaryColor, $key: border-radius);
+                        box-shadow: map-get($map: $mainButtonSecundaryColor, $key: box-shadow);
+                        width: 150px;
+                    }
+
+                    div {
+                        .form-control-input-text {
+                            background-color: transparent;
+                            color: black;
+                            outline: none;
+                            outline-style: none;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: solid $mainPrimaryColor 1px;
+                            padding: 3px;
+                            border-radius: 0;
+                            margin-bottom: 50px;
+                            height: 40px;
+                            display: block;
+                            width: 100%;
+                        }
+
+                        div {
+                            div {
+                                .form-control-input-text {
+                                    @extend .form-control-input-text;
+                                }
+                            }
+                        }
+
+                        div {
+
+
+                            .h6-mandatory-label {
+                                font-weight: 400;
+                                margin: 30px 0;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            div {
+                .img-contactUs {
+                    scale: 0;
+                    position: absolute;
+                    right: 9%;
+                    top: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1025px){
+    #contactForm {
+        .container-fluid-contactForm {
+            .main-container-form-all {
+                .main-container-form {
+                    width: 100%;
+                    padding-right: 0;
+                }
+                div{
+                    .img-contactUs{
+                        scale: 0;
+                    }
+                }
+            }
+        }
+    }
+}

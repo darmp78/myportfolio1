@@ -51,16 +51,6 @@
     }
 }
 
-/* Animations */
-@keyframes fade-in {
-    to {
-        scale: 1;
-        opacity: 1;
-    }
-
-    ;
-}
-
  /* Media query breakpoints */
  @media (max-width:1000px) {
     #myWorkingExperience {

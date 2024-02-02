@@ -419,13 +419,6 @@
   line-height: 26px;
 }
 
-/* Animations */
-@keyframes fade-in {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
 /* Media query breakpoints */
 @media (max-width: 1000px) {
   #myWorkingExperience .container-fluid .row-container-workingExp {
@@ -481,7 +474,86 @@
   color: #E75042;
   padding-bottom: 3%;
 }
+#industries .container-fluid-industries div .card-industries, #industries .container-fluid-industries div .card-industries-under1, #industries .container-fluid-industries div .card-industries-under {
+  padding: 2%;
+  font-weight: 700;
+  scale: 0.7;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+#industries .container-fluid-industries div .card-industries div, #industries .container-fluid-industries div .card-industries-under1 div, #industries .container-fluid-industries div .card-industries-under div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#industries .container-fluid-industries div .card-industries-under {
+  padding: 2% 18% 2% 2%;
+}
+#industries .container-fluid-industries div .card-industries-under div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#industries .container-fluid-industries div .card-industries-under1 {
+  padding: 2% 2% 2% 18%;
+}
+#industries .container-fluid-industries div .card-industries-under1 div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+#contactForm .container-fluid-contactForm {
+  padding: 3% 15% 3%;
+}
+#contactForm .container-fluid-contactForm .main-container-form-all {
+  background-image: url("../images/contacUs.png");
+}
+#contactForm .container-fluid-contactForm .main-container-form-all .main-container-form {
+  width: 60%;
+  padding-right: 3%;
+  background-color: white;
+}
+#contactForm .container-fluid-contactForm .main-container-form-all .main-container-form .contactUs-form .send-button-contactUS {
+  margin: 5% 3% 5% 0;
+  border-color: #E75042;
+  background-color: #E75042;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 150px;
+}
+#contactForm .container-fluid-contactForm .main-container-form-all .main-container-form .contactUs-form div .form-control-input-text, #contactForm .container-fluid-contactForm .main-container-form-all .main-container-form .contactUs-form div div div .form-control-input-text {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #0F4345 1px;
+  padding: 3px;
+  border-radius: 0;
+  margin-bottom: 50px;
+  height: 40px;
+  display: block;
+  width: 100%;
+}
+#contactForm .container-fluid-contactForm .main-container-form-all .main-container-form .contactUs-form div div .h6-mandatory-label {
+  font-weight: 400;
+  margin: 30px 0;
+}
+#contactForm .container-fluid-contactForm .main-container-form-all div .img-contactUs {
+  scale: 0;
+  position: absolute;
+  right: 9%;
+  top: 25%;
+}
+
+@media (max-width: 1025px) {
+  #contactForm .container-fluid-contactForm .main-container-form-all .main-container-form {
+    width: 100%;
+    padding-right: 0;
+  }
+  #contactForm .container-fluid-contactForm .main-container-form-all div .img-contactUs {
+    scale: 0;
+  }
+}
 /* My links */
 #links {
   text-align: left;
